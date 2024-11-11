@@ -1,0 +1,227 @@
+actor:
+  lr: 0.01
+  l2_coef: 0.05
+  normalize: -1
+  nhidden: 32
+  dropout: 0.5
+  patience: 100
+  num_layers: 2
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 0.1
+  tau: 0.25
+
+
+chameleon:
+  lr: 0.01
+  l2_coef: 0.00005
+  normalize: -1
+  nhidden: 128
+  dropout: 0.2
+  patience: 100
+  num_layers: 2
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 0.1
+  tau: 0.25
+
+
+squirrel:
+  lr: 0.01
+  l2_coef: 0.00005
+  normalize: -1
+  nhidden: 32
+  dropout: 0.2
+  patience: 100
+  num_layers: 8
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 0.1
+  tau: 0.25
+
+
+roman-empire:
+  lr: 0.01
+  l2_coef: 0.00005
+  normalize: -1
+  nhidden: 32
+  dropout: 0.2
+  patience: 100
+  num_layers: 4
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 0.1
+  tau: 0.25
+
+
+amazon-ratings:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  nhidden: 32
+  dropout: 0.2
+  patience: 100
+  num_layers: 2
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 1
+  tau: 0.25
+
+
+blogcatalog:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  nhidden: 64
+  dropout: 0.5
+  patience: 100
+  num_layers: 4
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 1
+  tau: 0.25
+
+
+flickr:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: 1
+  nhidden: 64
+  dropout: 0.2
+  patience: 100
+  num_layers: 4
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 1
+  tau: 0.25
+
+
+photo:
+  lr: 0.0005
+  l2_coef: 0.00005
+  normalize: 1
+  nhidden: 64
+  dropout: 0.2
+  patience: 100
+  num_layers: 2
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 1
+  tau: 0.25
+
+
+wikics:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  nhidden: 32
+  dropout: 0.2
+  patience: 100
+  num_layers: 4
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 0
+  tau: 0.25
+
+pubmed:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  nhidden: 32
+  dropout: 0.2
+  patience: 100
+  num_layers: 2
+  num_heads: 1
+  nb_random_features: 30
+  use_bn: True
+  use_gumbel: True
+  use_residual: True
+  use_act: False
+  use_jk: False
+  nb_gumbel_sample: 10
+  rb_order: 2
+  rb_trans: "sigmoid"
+  use_edge_loss: True
+  lamda: 1
+  tau: 0.25

@@ -1,0 +1,118 @@
+pubmed:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+actor:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+chameleon:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+squirrel:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+roman-empire:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+amazon-ratings:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+blogcatalog:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+flickr:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: 1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+photo:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: 1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6
+
+
+wikics:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  aggregation: mean
+  type: concat
+  n_units: 512
+  n_layers: 6

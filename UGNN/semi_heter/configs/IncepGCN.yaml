@@ -1,0 +1,98 @@
+pubmed:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+actor:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+chameleon:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+squirrel:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+roman-empire:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+amazon-ratings:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+blogcatalog:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+flickr:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: 1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+photo:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: 1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3
+
+
+wikics:
+  lr: 0.001
+  l2_coef: 0.00005
+  normalize: -1
+  dropout: 0.5
+  patience: 100
+  nhidden: 512
+  n_layers: 3

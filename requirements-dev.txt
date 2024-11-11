@@ -1,0 +1,19 @@
+pre-commit
+pylint
+yapf
+black
+mdformat
+mdformat_gfm
+mdformat_frontmatter
+mdformat_footnote
+virtualenv
+jupyter
+notebook
+sphinx
+sphinx_copybutton
+sphinx_rtd_theme
+python-semantic-release>=8.0.0
+build
+# latest tensorboard needs this version
+protobuf<5
+tensorboard

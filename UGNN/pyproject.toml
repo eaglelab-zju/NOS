@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "py_setting"
+version = "0.0.1"
+authors = [{ name = "galo.gm", email = "galo.gm.work@gmail.com" }]
+keywords = [""]
+description = ""
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    # "torch>=1.12",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/xxx"
+"Bug Tracker" = "https://github.com/xxx"
+
+[tool.yapf]
+based_on_style = "facebook"
+indent_width = 4
+split_before_first_argument = true
+split_arguments_when_comma_terminated = true
+indent_dictionary_value = true
+column_limit = 100
+
+[tool.yapfignore]
+
+[tool.black]
+line-length = 100
+
+[tool.semantic_release]
+version_variables = ["py_setting/__init__.py:__version__", "docs/conf.py:release"]
+version_toml = ["pyproject.toml:project.version"]
+major_on_zero = false
+changelog_file = "CHANGELOG.md"
