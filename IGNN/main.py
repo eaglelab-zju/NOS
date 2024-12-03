@@ -10,35 +10,25 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from graph_datasets import load_data
-from the_utils import draw_chart
-from the_utils import set_device
-from the_utils import set_seed
-from torch import nn
 from ignn.utils import eval_rocauc
+from the_utils import draw_chart, set_device, set_seed
+from torch import nn
 
 torch.set_printoptions(threshold=10_000)
 np.set_printoptions(threshold=10_000)
 
-from ignn.models import FlatGNN
-from ignn.modules import Data
-from ignn.utils import get_splits_mask
-from ignn.utils import read_configs
-from ignn.utils import set_args_wrt_dataset, metric
-
-from the_utils import (
-    evaluate_from_embeddings,
-    tab_printer,
-    save_to_csv_files,
-    split_train_test_nodes,
-    check_modelfile_exists,
-    make_parent_dirs,
-)
+import time
+import traceback
 
 import networkx as nx
-import time
-
+from ignn.models import FlatGNN
+from ignn.modules import Data
+from ignn.utils import (get_splits_mask, metric, read_configs,
+                        set_args_wrt_dataset)
 from sklearn.metrics import accuracy_score as ACC
-import traceback
+from the_utils import (check_modelfile_exists, evaluate_from_embeddings,
+                       make_parent_dirs, save_to_csv_files,
+                       split_train_test_nodes, tab_printer)
 
 norms = {
     "chameleon": False,
@@ -516,7 +506,9 @@ def main(
                 repeat=10,
                 split_id=i,
                 SPLIT_DIR=DATA.SPLIT_DIR,
-                labeled_idx=labeled_idx if graph.name in ["pokec_linkx", "wiki_linkx"] else None,
+                labeled_idx=labeled_idx
+                if graph.name in ["pokec_linkx", "wiki_linkx"]
+                else None,
             )
             print(
                 f"random split train:val:test = {TRAIN_RATIO}:{VALID_RATIO}:{100-TRAIN_RATIO-VALID_RATIO}"
@@ -665,7 +657,6 @@ def main(
 
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser(
         prog="FlatGNN",
         description="",
@@ -764,7 +755,8 @@ if __name__ == "__main__":
             source=args.source,
             h_feats=(
                 DIM_BOUND[args.dataset]
-                if args.dataset in DIM_BOUND.keys() and args.h_feats > DIM_BOUND[args.dataset]
+                if args.dataset in DIM_BOUND.keys()
+                and args.h_feats > DIM_BOUND[args.dataset]
                 else args.h_feats
             ),
             MODEL=args.model,
@@ -784,7 +776,8 @@ if __name__ == "__main__":
                         source=source,
                         h_feats=(
                             DIM_BOUND[dataset]
-                            if dataset in DIM_BOUND.keys() and args.h_feats > DIM_BOUND[dataset]
+                            if dataset in DIM_BOUND.keys()
+                            and args.h_feats > DIM_BOUND[dataset]
                             else args.h_feats
                         ),
                         MODEL=args.model,

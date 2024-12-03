@@ -116,7 +116,9 @@ class FlatGNN(nn.Module):
             "ordered-gating": h_feats,
             # "self-attention": h_feats + out_ndim_trans * num_heads + ndim_h_a if n_nodes is not None else h_feats + out_ndim_trans * num_heads,
             # "self-attention":h_feats,
-            "self-attention": out_ndim_trans * num_heads if trans_layer_num else h_feats,
+            "self-attention": out_ndim_trans * num_heads
+            if trans_layer_num
+            else h_feats,
             # "self-attention":out_ndim_trans * num_heads + ndim_h_a if n_nodes is not None else out_ndim_trans * num_heads,
             # "self-attention": (
             #     (
@@ -185,7 +187,9 @@ class FlatGNN(nn.Module):
         graph=None,
         device=None,
     ):
-        z_flat_gnn = self.flat_gnn(graph=graph, device=device, batch_idx=batch_idx, feats=features)
+        z_flat_gnn = self.flat_gnn(
+            graph=graph, device=device, batch_idx=batch_idx, feats=features
+        )
         # if self.flat_gnn_s is not None:
         #     for _, flat_gnn_s in enumerate(self.flat_gnn_s):
         #         # z_flat_gnn = (
@@ -242,7 +246,6 @@ class FlatGNN(nn.Module):
         split_id=None,
         device: torch.device = torch.device("cpu"),
     ):
-
         self.device = device
         self.to(self.device)
 
@@ -261,7 +264,6 @@ class FlatGNN(nn.Module):
 
         t_start = time.time()
         for epoch in range(self.n_epochs):
-
             n = graph.num_nodes()
             shf = torch.randperm(n)
 
@@ -296,10 +298,14 @@ class FlatGNN(nn.Module):
                     # )
 
                     logits = self.classifier(embeddings)
-                    loss = self.criterion(logits[batch_train_mask], batch_labels[batch_train_mask])
+                    loss = self.criterion(
+                        logits[batch_train_mask], batch_labels[batch_train_mask]
+                    )
                     # logits_1 = self.classifier_1(H)
                     # loss = self.criterion(logits[batch_train_mask], batch_labels[batch_train_mask]) + self.criterion(logits_1[batch_train_mask], batch_labels[batch_train_mask])
-                    loss_val = self.criterion(logits[batch_val_mask], batch_labels[batch_val_mask])
+                    loss_val = self.criterion(
+                        logits[batch_val_mask], batch_labels[batch_val_mask]
+                    )
                     loss_test = self.criterion(
                         logits[batch_test_mask], batch_labels[batch_test_mask]
                     )

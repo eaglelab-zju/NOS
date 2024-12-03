@@ -6,11 +6,7 @@ import math
 import random
 import time
 from pathlib import Path
-from typing import Any
-from typing import Callable
-from typing import Dict
-from typing import List
-from typing import Tuple
+from typing import Any, Callable, Dict, List, Tuple
 
 import dgl
 import numpy as np
@@ -20,18 +16,12 @@ import torch.nn.functional as F
 from sklearn.cluster import KMeans
 from sklearn.metrics import accuracy_score as ACC
 from sklearn.preprocessing import normalize
-from the_utils import get_str_time
-from the_utils import make_parent_dirs
-from the_utils import save_to_csv_files
+from the_utils import get_str_time, make_parent_dirs, save_to_csv_files
 from torch import nn
 from torch.distributions.normal import Normal
-from torch.nn import LayerNorm
-from torch.nn import Linear
-from torch.nn import Module
-from torch.nn import ModuleList
+from torch.nn import LayerNorm, Linear, Module, ModuleList
 from torch.utils.tensorboard import SummaryWriter
-from torch_sparse import fill_diag
-from torch_sparse import SparseTensor
+from torch_sparse import SparseTensor, fill_diag
 from tqdm import tqdm
 
 from .MLP import MLP

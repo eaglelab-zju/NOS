@@ -6,11 +6,7 @@ import math
 import random
 import time
 from pathlib import Path
-from typing import Any
-from typing import Callable
-from typing import Dict
-from typing import List
-from typing import Tuple
+from typing import Any, Callable, Dict, List, Tuple
 
 import dgl
 import numpy as np
@@ -21,27 +17,20 @@ from dgl.nn.pytorch import GraphConv
 from sklearn.cluster import KMeans
 from sklearn.metrics import accuracy_score as ACC
 from sklearn.preprocessing import normalize
-from the_utils import get_str_time
-from the_utils import make_parent_dirs
-from the_utils import save_to_csv_files
+from the_utils import get_str_time, make_parent_dirs, save_to_csv_files
 from torch import nn
 from torch.distributions.normal import Normal
-from torch.nn import LayerNorm
-from torch.nn import Linear
-from torch.nn import Module
-from torch.nn import ModuleList
+from torch.nn import LayerNorm, Linear, Module, ModuleList
 from torch.utils.tensorboard import SummaryWriter
-from torch_sparse import fill_diag
-from torch_sparse import SparseTensor
-from tqdm import tqdm
 from torch_geometric.nn import GATConv
+from torch_sparse import SparseTensor, fill_diag
+from tqdm import tqdm
 
-from ..utils import preprocess_neighborhoods, metric
+from ..utils import metric, preprocess_neighborhoods
 from .DeepSets import DeepSets
 from .LSTM import LSTM
 from .MLP import MLP
 from .orderedGating import ONGNNConv
-
 
 acts = {
     "relu": nn.ReLU,
@@ -49,6 +38,7 @@ acts = {
     "sigmoid": nn.Sigmoid,
     "none": nn.Identity,
 }
+
 
 class IGNNConv(nn.Module):
     def __init__(
@@ -381,7 +371,9 @@ class IGNNConv(nn.Module):
                             # self.nei_ind_emb[i](self.nei_feats[i].index_select(0, batch_idx))
                             self.nei_ind_emb[i](
                                 self.nei_uni_emb(
-                                    self.nei_feats[i].index_select(0, batch_idx).to(self.device)
+                                    self.nei_feats[i]
+                                    .index_select(0, batch_idx)
+                                    .to(self.device)
                                 )
                                 if batch_idx is not None
                                 else self.nei_uni_emb(self.nei_feats[i].to(self.device))
@@ -391,7 +383,9 @@ class IGNNConv(nn.Module):
                         self.ns.append(
                             # self.nei_ind_emb[i](self.nei_feats[i].index_select(0, batch_idx))
                             self.nei_ind_emb[i](
-                                self.nei_feats[i].index_select(0, batch_idx).to(self.device)
+                                self.nei_feats[i]
+                                .index_select(0, batch_idx)
+                                .to(self.device)
                                 if batch_idx is not None
                                 else self.nei_feats[i].to(self.device)
                             )
@@ -421,7 +415,10 @@ class IGNNConv(nn.Module):
                 torch.cat(
                     (
                         torch.cat(
-                            [nei_rel_learn(hops_feats) for nei_rel_learn in self.nei_rel_learn],
+                            [
+                                nei_rel_learn(hops_feats)
+                                for nei_rel_learn in self.nei_rel_learn
+                            ],
                             dim=-1,
                         ),
                         h_a,
@@ -551,7 +548,9 @@ class FlatGNN(nn.Module):
         # in_ndim_trans = ndim_fc
 
         if n_nodes is not None:
-            self.in_ndim_trans = {"concat": h_feats + ndim_h_a, "only-concat": ndim_fc}[nrl]
+            self.in_ndim_trans = {"concat": h_feats + ndim_h_a, "only-concat": ndim_fc}[
+                nrl
+            ]
             # ndim_fc = h_feats * N_NIE
         else:
             self.in_ndim_trans = {"concat": h_feats, "only-concat": ndim_fc}[nrl]

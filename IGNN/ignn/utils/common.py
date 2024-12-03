@@ -2,20 +2,18 @@
 common utils
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
 
 import numpy as np
 import scipy.sparse as sp
 import torch
 import torch.nn.functional as F
-from the_utils import make_parent_dirs
-from the_utils import split_train_test_nodes
+from sklearn.metrics import accuracy_score as ACC
+from sklearn.metrics import roc_auc_score
+from the_utils import make_parent_dirs, split_train_test_nodes
 from torch_sparse import SparseTensor
 from tqdm import tqdm
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import accuracy_score as ACC
-
 
 flag = True
 
@@ -28,7 +26,6 @@ def metric(
     val_mask,
     test_mask,
 ):
-
     if name in [
         "Penn94_linxk",
         "genius_linkx",
@@ -73,15 +70,15 @@ def metric(
             "pokec_linkx",
         ]:
             return (
-                eval_rocauc(labels[train_mask].cpu().numpy(), logits[train_mask].cpu().numpy())[
-                    "rocauc"
-                ],
-                eval_rocauc(labels[val_mask].cpu().numpy(), logits[val_mask].cpu().numpy())[
-                    "rocauc"
-                ],
-                eval_rocauc(labels[test_mask].cpu().numpy(), logits[test_mask].cpu().numpy())[
-                    "rocauc"
-                ],
+                eval_rocauc(
+                    labels[train_mask].cpu().numpy(), logits[train_mask].cpu().numpy()
+                )["rocauc"],
+                eval_rocauc(
+                    labels[val_mask].cpu().numpy(), logits[val_mask].cpu().numpy()
+                )["rocauc"],
+                eval_rocauc(
+                    labels[test_mask].cpu().numpy(), logits[test_mask].cpu().numpy()
+                )["rocauc"],
             )
 
 
@@ -96,10 +93,14 @@ def eval_rocauc(y_true, y_pred):
         # AUC is only defined when there is at least one positive data.
         if np.sum(y_true[:, i] == 1) > 0 and np.sum(y_true[:, i] == 0) > 0:
             is_labeled = y_true[:, i] == y_true[:, i]
-            rocauc_list.append(roc_auc_score(y_true[is_labeled, i], y_pred[is_labeled, i]))
+            rocauc_list.append(
+                roc_auc_score(y_true[is_labeled, i], y_pred[is_labeled, i])
+            )
 
     if len(rocauc_list) == 0:
-        raise RuntimeError("No positively labeled data available. Cannot compute ROC-AUC.")
+        raise RuntimeError(
+            "No positively labeled data available. Cannot compute ROC-AUC."
+        )
 
     return {"rocauc": sum(rocauc_list) / len(rocauc_list)}
 
@@ -125,7 +126,7 @@ def get_splits_mask(
             fixed_split=True,
             split_save_dir=SPLIT_DIR,
         )
-        if name!='pokec_linkx':
+        if name != "pokec_linkx":
             train_idx = labeled_idx[train_idx]
             val_idx = labeled_idx[val_idx]
             test_idx = labeled_idx[test_idx]
@@ -216,7 +217,9 @@ def sparse_mx_to_torch_sparse_tensor(sparse_mx: sp.spmatrix) -> torch.Tensor:
         (torch.Tensor): torch sparse tensor
     """
     sparse_mx = sparse_mx.tocoo().astype(np.float32)
-    indices = torch.from_numpy(np.vstack((sparse_mx.row, sparse_mx.col)).astype(np.int64))
+    indices = torch.from_numpy(
+        np.vstack((sparse_mx.row, sparse_mx.col)).astype(np.int64)
+    )
     values = torch.from_numpy(sparse_mx.data)
     shape = torch.Size(sparse_mx.shape)
     return torch.sparse_coo_tensor(indices, values, shape, dtype=torch.float32)
