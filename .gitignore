@@ -7,3 +7,4 @@ dataset/
 logs/
 model_checkpoint/
 predict_result/
+__pycache__/
