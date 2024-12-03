@@ -120,22 +120,8 @@ class Predictor:
                     int(y_ratio * node["screen_bottom"]),
                 )
 
-                cur_color = color
-                if self.config.args.dataset == "rico" or (
-                    self.config.args.dataset == "mixed" and page_id < 0
-                ):
-                    # 假阳性
-                    if prop == "predict_focusable" and not node.get(
-                        "actual_focusable", False
-                    ):
-                        cur_color = (255, 0, 0)
-                    # 假阴性
-                    if prop == "actual_focusable" and not node.get(
-                        "predict_focusable", False
-                    ):
-                        cur_color = (0, 0, 255)
                 # 在指定坐标处画矩形框
-                cv2.rectangle(img, (left, top), (right, bottom), cur_color, thickness)
+                cv2.rectangle(img, (left, top), (right, bottom), color, thickness)
             cv2.putText(
                 img,
                 text,
