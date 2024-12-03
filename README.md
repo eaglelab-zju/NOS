@@ -113,7 +113,7 @@ cp $download_dir/weights/rico-labeled/split_1.pt    ./model_checkpoint/ignn/rico
 source .env/bin/activate
 
 python -u main.py --mode predict --checkpoint split_1 --dataset nos-raw --split 1 --gpu 0
-python -u main.py --mode predict --checkpoint split_1 --dataset nos-raw --split 1 --gpu 0
+python -u main.py --mode predict --checkpoint split_1 --dataset rico    --split 1 --gpu 0
 ```
 
 - then you can see the result in `./predict_result/ignn`
