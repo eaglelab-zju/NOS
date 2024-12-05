@@ -127,8 +127,6 @@ python preprocess.py
 └── IGNN
 ```
 
-> `mixed` dataset 
-
 ## Predict
 
 - copy the checkpoint file
