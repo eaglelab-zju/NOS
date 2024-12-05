@@ -19,3 +19,55 @@ The limitations of 16 existing UI tasks for addressing NA, OA and SA issues are 
 | 15   | **Conversation Perception**: Interprets conversational cues without addressing focusability and accessibility within the UI.                        | ✗  | ✗  | ✗  |
 | 16   | **Conversation Interaction**: Facilitates conversation-based interactions but does not predict component accessibility needs.                       | ✗  | ✗  | ✗  |
 |    | **UI Focusability Prediction (UFP)**: Achieve unified predictions on component focusability and granularity.                                    | ✓  | ✓  | ✓  |
+
+## UI Function-targeted Tasks
+1. **UI Detection**
+   Detecting and segmenting UI components in screen images, which aids in tasks like automated testing or accessibility enhancement.
+
+2. **Type Recognition**
+   Identifying the functional type of UI components (e.g., button, text field) based on visual or structural features.
+
+3. **Function Inference**
+   Inferring functionality of UI elements to facilitate automated interactions, especially in complex or dynamic interfaces.
+
+4. **Tappability**
+   Assessing whether UI elements are easily tappable, especially on touch devices, considering size, placement, and accessibility.
+
+## UI Description Generation Tasks
+5. **Widget Captioning/Detailed Description Generation**  
+   Generating descriptive captions or comprehensive descriptions for UI elements (widgets) and layouts to improve accessibility and assistive technologies.
+
+6. **Screen Summarization**  
+   Condensing the content and layout of a screen to provide a quick overview, which is particularly useful for users with visual impairments.
+
+## User Behavior-targeted Tasks
+7. **UI Component Suggestion**  
+   Automatically suggesting UI elements based on content and context, facilitating user-centered design.
+
+8. **Touch Gesture Recognition**  
+   Recognizing multi-touch or gesture patterns and linking them to UI functions for a smoother, gesture-based interaction.
+
+9. **User Intent Detection**.  
+   Identifying user intent based on interactions with UI elements, which can enhance responsiveness and adaptability in applications.
+
+10. **User Flow Prediction**  
+   Predicting user navigation patterns or next actions within an interface based on historical or contextual data, improving UX by personalizing pathways.
+
+11. **Screen Transition Prediction**  
+   Modeling likely transitions between screens in an app to streamline workflows and support user needs.
+
+12. **UI Aesthetics Evaluation**  
+   Assessing and enhancing UI aesthetics through computational models that predict aesthetic quality and user satisfaction.
+
+## FM-based Hybrid Tasks
+13. **Command Grounding** 
+   Mapping user commands (e.g., voice or text inputs) to corresponding UI actions or elements. Techniques using natural language processing and UI context have been proposed recently.
+
+14. **Multi-modal Interaction Modeling**  
+   Modeling interactions across different modalities (touch, voice, visual) for consistent experiences across devices.
+
+15. **Conversation Perception**  
+   Understanding contextual user conversations around UI elements, assisting in adaptive interface updates.
+
+16. **Conversation Interaction**  
+   Analyzing interaction patterns in conversational interfaces to enhance engagement and usability.
