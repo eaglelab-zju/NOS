@@ -1,8 +1,4 @@
 .vscode/
-*.png
-*.json
-*.npy
-*.pt
 dataset/
 logs/
 model_checkpoint/

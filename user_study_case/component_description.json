@@ -1,0 +1,531 @@
+{
+    "33": {
+        "talkback": [
+            {
+                "node_id": 2,
+                "audio": "垃圾桶家用黑色彩手提式加厚大号背心垃圾袋"
+            },
+            {
+                "node_id": 4,
+                "audio": "3.6元"
+            },
+            {
+                "node_id": 5,
+                "audio": "保存图片 按钮"
+            },
+            {
+                "node_id": 22,
+                "audio": "取消 按钮"
+            }
+        ],
+        "label": [
+            {
+                "node_id": 2,
+                "audio": "垃圾桶家用黑色彩手提式加厚大号背心垃圾袋"
+            },
+            {
+                "node_id": 4,
+                "audio": "3.6元"
+            },
+            {
+                "node_id": 5,
+                "audio": "保存图片 按钮"
+            },
+            {
+                "node_id": 8,
+                "audio": "分享到微信"
+            },
+            {
+                "node_id": 10,
+                "audio": "复制链接"
+            },
+            {
+                "node_id": 12,
+                "audio": "分享到淘友圈"
+            },
+            {
+                "node_id": 14,
+                "audio": "保存图片"
+            },
+            {
+                "node_id": 16,
+                "audio": "分享到微博"
+            },
+            {
+                "node_id": 18,
+                "audio": "当面分享"
+            },
+            {
+                "node_id": 21,
+                "audio": "让好友扫一扫 分享并加他为淘友"
+            },
+            {
+                "node_id": 22,
+                "audio": "取消 按钮"
+            }
+        ],
+        "info": {
+            "class": "NA",
+            "subClass": "Nodes with Valid & Unique Interaction",
+            "prev": 33,
+            "next": 3
+        }
+    },
+
+    "3": {
+        "talkback": [
+            {
+                "node_id": 1,
+                "audio": "网页视图"
+            },
+            {
+                "node_id": 2,
+                "audio": "关闭 按钮"
+            },
+            {
+                "node_id": 4,
+                "audio": "二手房 当前您位于列表中 3项"
+            },
+            {
+                "node_id": 6,
+                "audio": "新房"
+            },
+            {
+                "node_id": 8,
+                "audio": "租房"
+            },
+            {
+                "node_id": 10,
+                "audio": "搜索 按钮 您已离开列表"
+            },
+            {
+                "node_id": 11,
+                "audio": "区域"
+            },
+            {
+                "node_id": 13,
+                "audio": "租金"
+            },
+            {
+                "node_id": 15,
+                "audio": "房型"
+            },
+            {
+                "node_id": 17,
+                "audio": "更多"
+            },
+            {
+                "node_id": 21,
+                "audio": "第1航 第2列 您当前位于网格中 28航 4列"
+            },
+            {
+                "node_id": 22,
+                "audio": "第3列"
+            },
+            {
+                "node_id": 23,
+                "audio": "第4列"
+            },
+            {
+                "node_id": 24,
+                "audio": "未勾选 整租 复选框 第2航 第1列"
+            },
+            {
+                "node_id": 26,
+                "audio": "未勾选 合租 复选框 第2列"
+            },
+            {
+                "node_id": 31,
+                "audio": "第3航 第2列"
+            },
+            {
+                "node_id": 32,
+                "audio": "第3列"
+            },
+            {
+                "node_id": 33,
+                "audio": "第4列"
+            },
+            {
+                "node_id": 34,
+                "audio": "未勾选 必看好房 复选框 第4航 第1列"
+            },
+            {
+                "node_id": 36,
+                "audio": "未勾选 近地铁 复选框 第2列"
+            },
+            {
+                "node_id": 38,
+                "audio": "未勾选 拎包入住 复选框 第3列"
+            },
+            {
+                "node_id": 40,
+                "audio": "未勾选 精装修 复选框 第4列"
+            },
+            {
+                "node_id": 42,
+                "audio": "未勾选 押一付一 复选框 第5航 第1列"
+            },
+            {
+                "node_id": 44,
+                "audio": "未勾选 新上 复选框 第2列"
+            },
+            {
+                "node_id": 46,
+                "audio": "未勾选 认证公寓 复选框 第3列"
+            },
+            {
+                "node_id": 48,
+                "audio": "未勾选 随时看房 复选框 第4列"
+            },
+            {
+                "node_id": 50,
+                "audio": "未勾选 限时优惠 复选框 第6航 第1列"
+            },
+            {
+                "node_id": 52,
+                "audio": "未勾选 vr房源 复选框 第2列"
+            },
+            {
+                "node_id": 57,
+                "audio": "第7航 第2列"
+            },
+            {
+                "node_id": 58,
+                "audio": "第3列"
+            },
+            {
+                "node_id": 59,
+                "audio": "第4列"
+            },
+            {
+                "node_id": 60,
+                "audio": "未勾选 东 复选框 第8航 第1列"
+            },
+            {
+                "node_id": 62,
+                "audio": "未勾选 西 复选框 第2列"
+            },
+            {
+                "node_id": 64,
+                "audio": "未勾选 南 复选框 第3列"
+            },
+            {
+                "node_id": 66,
+                "audio": "未勾选 北 复选框 第4列"
+            },
+            {
+                "node_id": 68,
+                "audio": "未勾选 南北 复选框 第9航 第1列"
+            },
+            {
+                "node_id": 74,
+                "audio": "第十航 第2列"
+            },
+            {
+                "node_id": 75,
+                "audio": "第3列"
+            },
+            {
+                "node_id": 76,
+                "audio": "第4列"
+            },
+            {
+                "node_id": 77,
+                "audio": "未勾选 月租 复选框 第十航 第1列"
+            },
+            {
+                "node_id": 79,
+                "audio": "未勾选 年租 复选框 第2列"
+            },
+            {
+                "node_id": 81,
+                "audio": "未勾选 一个月起租 复选框 第3列"
+            },
+            {
+                "node_id": 83,
+                "audio": "未勾选 一到三个月 复选框 第4列"
+            },
+            {
+                "node_id": 85,
+                "audio": "贝壳找房"
+            },
+            {
+                "node_id": 86,
+                "audio": "崇置 您已离开网格"
+            },
+            {
+                "node_id": 88,
+                "audio": "确定"
+            },
+            {
+                "node_id": 89,
+                "audio": "评价"
+            },
+            {
+                "node_id": 93,
+                "audio": "图层"
+            },
+            {
+                "node_id": 95,
+                "audio": "关注"
+            },
+            {
+                "node_id": 97,
+                "audio": "定位"
+            },
+            {
+                "node_id": 99,
+                "audio": "5公里"
+            },
+            {
+                "node_id": 100,
+                "audio": "5公里"
+            }
+        ],
+        "label": [
+            {
+                "node_id": 2,
+                "audio": "关闭 按钮"
+            },
+            {
+                "node_id": 4,
+                "audio": "二手房 当前您位于列表中 3项"
+            },
+            {
+                "node_id": 6,
+                "audio": "新房"
+            },
+            {
+                "node_id": 8,
+                "audio": "租房"
+            },
+            {
+                "node_id": 10,
+                "audio": "搜索 按钮 您已离开列表"
+            },
+            {
+                "node_id": 11,
+                "audio": "区域"
+            },
+            {
+                "node_id": 13,
+                "audio": "租金"
+            },
+            {
+                "node_id": 15,
+                "audio": "房型"
+            },
+            {
+                "node_id": 17,
+                "audio": "更多"
+            },
+            {
+                "node_id": 24,
+                "audio": "未勾选 整租 复选框 第2航 第1列"
+            },
+            {
+                "node_id": 26,
+                "audio": "未勾选 合租 复选框 第2列"
+            },
+            {
+                "node_id": 34,
+                "audio": "未勾选 必看好房 复选框 第4航 第1列"
+            },
+            {
+                "node_id": 36,
+                "audio": "未勾选 近地铁 复选框 第2列"
+            },
+            {
+                "node_id": 38,
+                "audio": "未勾选 拎包入住 复选框 第3列"
+            },
+            {
+                "node_id": 40,
+                "audio": "未勾选 精装修 复选框 第4列"
+            },
+            {
+                "node_id": 42,
+                "audio": "未勾选 押一付一 复选框 第5航 第1列"
+            },
+            {
+                "node_id": 44,
+                "audio": "未勾选 新上 复选框 第2列"
+            },
+            {
+                "node_id": 46,
+                "audio": "未勾选 认证公寓 复选框 第3列"
+            },
+            {
+                "node_id": 48,
+                "audio": "未勾选 随时看房 复选框 第4列"
+            },
+            {
+                "node_id": 50,
+                "audio": "未勾选 限时优惠 复选框 第6航 第1列"
+            },
+            {
+                "node_id": 52,
+                "audio": "未勾选 vr房源 复选框 第2列"
+            },
+            {
+                "node_id": 60,
+                "audio": "未勾选 东 复选框 第8航 第1列"
+            },
+            {
+                "node_id": 62,
+                "audio": "未勾选 西 复选框 第2列"
+            },
+            {
+                "node_id": 64,
+                "audio": "未勾选 南 复选框 第3列"
+            },
+            {
+                "node_id": 66,
+                "audio": "未勾选 北 复选框 第4列"
+            },
+            {
+                "node_id": 68,
+                "audio": "未勾选 南北 复选框 第9航 第1列"
+            },
+            {
+                "node_id": 86,
+                "audio": "崇置 您已离开网格"
+            },
+            {
+                "node_id": 88,
+                "audio": "确定"
+            }
+        ],
+        "info": {
+            "class": "OA",
+            "subClass": "Information-less nodes on Top Layout",
+            "prev": 33,
+            "next": 582
+        }
+    },
+    "582": {
+        "talkback": [
+            {
+                "node_id": 13,
+                "audio": "金额"
+            },
+            {
+                "node_id": 14,
+                "audio": "1.51"
+            },
+            {
+                "node_id": 15,
+                "audio": " 起"
+            },
+            {
+                "node_id": 16,
+                "audio": "券后价"
+            },
+            {
+                "node_id": 18,
+                "audio": "已优惠 3元"
+            },
+            {
+                "node_id": 19,
+                "audio": "已售900加"
+            },
+            {
+                "node_id": 20,
+                "audio": "84卷卫生纸卷纸擦手纸餐巾纸家用实惠装整箱厕纸卫生间卷筒纸无芯"
+            },
+            {
+                "node_id": 21,
+                "audio": "详情"
+            },
+            {
+                "node_id": 22,
+                "audio": "购买得积分"
+            },
+            {
+                "node_id": 23,
+                "audio": "河北保定"
+            },
+            {
+                "node_id": 24,
+                "audio": "包邮"
+            }
+        ],
+        "label": [
+            {
+                "node_id": 12,
+                "audio": "84卷卫生纸卷纸擦手纸餐巾纸家用实惠装整箱厕纸卫生间卷筒纸无芯 券后价1.51元起 已优惠3元 已售900加 河北保定 包邮 购买得积分"
+            }
+        ],
+        "info": {
+            "class": "Focus Granularity",
+            "subClass": "Group",
+            "prev": 3,
+            "next": 856
+        }
+    },
+    "856": {
+        "talkback": [
+            {
+                "node_id": 7,
+                "audio": "热门搜索"
+            },
+            {
+                "node_id": 8,
+                "audio": "免费送 美食 演唱会 健身 亲子 公益 科技展 插花 图书 派对"
+            }
+        ],
+        "label": [
+            {
+                "node_id": 7,
+                "audio": "热门搜索"
+            },
+            {
+                "node_id": 9,
+                "audio": "免费送 点按搜索"
+            },
+            {
+                "node_id": 10,
+                "audio": "美食 点按搜索"
+            },
+            {
+                "node_id": 11,
+                "audio": "演唱会 点按搜索"
+            },
+            {
+                "node_id": 12,
+                "audio": "健身 点按搜索"
+            },
+            {
+                "node_id": 13,
+                "audio": "亲子 点按搜索"
+            },
+            {
+                "node_id": 14,
+                "audio": "公益 点按搜索"
+            },
+            {
+                "node_id": 15,
+                "audio": "科技展 点按搜索"
+            },
+            {
+                "node_id": 16,
+                "audio": "插花 点按搜索"
+            },
+            {
+                "node_id": 17,
+                "audio": "图书 点按搜索"
+            },
+            {
+                "node_id": 18,
+                "audio": "派对 点按搜索"
+            }
+        ],
+        "info": {
+            "class": "Focus Granularity",
+            "subClass": "Individual",
+            "prev": 582,
+            "next": 856
+        }
+    }
+}
