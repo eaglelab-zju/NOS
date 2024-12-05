@@ -34,40 +34,40 @@ The limitations of 16 existing UI tasks for addressing NA, OA and SA issues are 
    Assessing whether UI elements are easily tappable, especially on touch devices, considering size, placement, and accessibility.
 
 ## UI Description Generation Tasks
-1. **Widget Captioning/Detailed Description Generation**  
+5. **Widget Captioning/Detailed Description Generation**  
    Generating descriptive captions or comprehensive descriptions for UI elements (widgets) and layouts to improve accessibility and assistive technologies.
 
-2. **Screen Summarization**  
+6. **Screen Summarization**  
    Condensing the content and layout of a screen to provide a quick overview, which is particularly useful for users with visual impairments.
 
 ## User Behavior-targeted Tasks
-1. **UI Component Suggestion**  
+7. **UI Component Suggestion**  
    Automatically suggesting UI elements based on content and context, facilitating user-centered design.
 
-2. **Touch Gesture Recognition**  
+8. **Touch Gesture Recognition**  
    Recognizing multi-touch or gesture patterns and linking them to UI functions for a smoother, gesture-based interaction.
 
-3. **User Intent Detection**  
+9. **User Intent Detection**  
    Identifying user intent based on interactions with UI elements, which can enhance responsiveness and adaptability in applications.
 
-4. **User Flow Prediction**  
+10. **User Flow Prediction**  
    Predicting user navigation patterns or next actions within an interface based on historical or contextual data, improving UX by personalizing pathways.
 
-5. **Screen Transition Prediction**  
+11. **Screen Transition Prediction**  
    Modeling likely transitions between screens in an app to streamline workflows and support user needs.
 
-6. **UI Aesthetics Evaluation**  
+12. **UI Aesthetics Evaluation**  
    Assessing and enhancing UI aesthetics through computational models that predict aesthetic quality and user satisfaction.
 
 ## FM-based Hybrid Tasks
-1. **Command Grounding**  
+13. **Command Grounding**  
    Mapping user commands (e.g., voice or text inputs) to corresponding UI actions or elements. Techniques using natural language processing and UI context have been proposed recently.
 
-2. **Multi-modal Interaction Modeling**  
+14. **Multi-modal Interaction Modeling**  
    Modeling interactions across different modalities (touch, voice, visual) for consistent experiences across devices.
 
-3. **Conversation Perception**  
+15. **Conversation Perception**  
    Understanding contextual user conversations around UI elements, assisting in adaptive interface updates.
 
-4. **Conversation Interaction**  
+16. **Conversation Interaction**  
    Analyzing interaction patterns in conversational interfaces to enhance engagement and usability.
