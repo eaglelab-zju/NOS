@@ -39,8 +39,8 @@ Participants were instructed to interact with two distinct focus modes on variou
 | ![Case1_TalkBack](imgs/Case1_TalkBack.png)     | ![Case1_TalkBack](imgs/Case1_ManualLabel.png)        |
 
 2. **Case 2: OA**
-    - **App**: Real estate (Beike Zhaofang)
-    - **Content**: Filtering properties based on keywords.
+    - **App**: Real estate (Beike)
+    - **Content**: Filtering properties based on options.
     - **Issue**: In TalkBack mode, some regions appeared blank to sighted users, with the screen reader announcing only "Column X."
 
 | TalkBack | Manual Label     |
@@ -57,7 +57,7 @@ Participants were instructed to interact with two distinct focus modes on variou
 | ![Case1_TalkBack](imgs/Case3_TalkBack.png)     | ![Case1_TalkBack](imgs/Case3_ManualLabel.png)        |
 
 4. **Case 4: SA(Individual)**
-    - **App**: Lifestyle (HuodongJu)
+    - **App**: Life (HuodongJu)
     - **Content**: Searching for keywords with recommended popular search terms.
     - **Issue**: In TalkBack mode, all popular search terms were grouped into one focal point, while the manual annotation mode allowed each search term to be focused individually.
 
