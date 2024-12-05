@@ -27,7 +27,7 @@ Participants were instructed to interact with two distinct focus modes on variou
 4. Describe their ideal expectations for resolving such issues.
 5. Provide additional thoughts or suggestions related to these focus issues.
 
-#### Page Types and Observations
+#### Page Cases
 
 1. **Case 1: NA**
     - **App**: E-commerce (Taobao)
