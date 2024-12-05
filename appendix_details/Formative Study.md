@@ -80,17 +80,6 @@ Participants were instructed to interact with two distinct focus modes on variou
 | 4     | Frequent            |
 | 5     | Very Frequent       |
 
-#### Satisfaction with Focus Mode
-
-| Score | Satisfaction Level |
-| ----- | ------------------ |
-| 0     | Very Unsatisfied   |
-| 1     | Unsatisfied        |
-| 2     | Neutral            |
-| 3     | Somewhat Satisfied |
-| 4     | Satisfied          |
-| 5     | Very Satisfied     |
-
 #### Severity of Focus Issues
 
 | Score | Severity Level    |
@@ -102,3 +91,14 @@ Participants were instructed to interact with two distinct focus modes on variou
 | 4     | Severe            |
 | 5     | Very Severe       |
 
+
+#### Satisfaction with Focus Mode
+
+| Score | Satisfaction Level |
+| ----- | ------------------ |
+| 0     | Very Unsatisfied   |
+| 1     | Unsatisfied        |
+| 2     | Neutral            |
+| 3     | Somewhat Satisfied |
+| 4     | Satisfied          |
+| 5     | Very Satisfied     |
