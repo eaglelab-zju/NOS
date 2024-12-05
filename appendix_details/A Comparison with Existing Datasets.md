@@ -2,7 +2,7 @@
 | ------- | ----------------- | -------- | ------------------------------------------------------------ |
 | 1       | **ERICA**         | 2016     | Contains 18,000 screenshots from 1,000 Android apps and 3,000 user interaction traces, for analyzing search intent in user interactions. |
 | 2       | **Rico**          | 2017     | Over 72,000 interface screenshots from 9,700 Android apps, with view hierarchies, component categories, and layout info. It’s widely used for UI layout generation and component matching tasks. |
-| 3       | **Rico-semantic**          | 2017     | Extend Rico with 66,261 UI screenshots from 9,700 Android apps, providing semantic annotations and hierarchical structures for UI elements. |
+| 3       | **Rico-semantic**          | 2018     | Extend Rico with 66,261 UI screenshots from 9,700 Android apps, providing semantic annotations and hierarchical structures for UI elements. |
 | 4       | **ReDraw**        | 2018     | Contains 14,382 Android UI screenshots and 191,300 annotated components across 15 categories, useful for interface understanding and component recognition. |
 | 5       | **Wireframe**     | 2020     | Provides wireframe designs from popular Android apps for UI analysis and modeling, created using various parsing methods. |
 | 6       | **WidgetCaption** | 2020     | Based on RICO, with 66,000 screens, and an additional 12,000 screens crawled through random clicks. |
