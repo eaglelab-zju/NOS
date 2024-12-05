@@ -2,16 +2,16 @@
 
 | ID   | Gender | Age  | Profession        | Visual Impairment Level |
 | ---- | ------ | ---- | ----------------- | ----------------------- |
-| 1    | Male   | 35   | Teacher           | Low Vision              |
-| 2    | Female | 31   | Teacher           | Low Vision              |
-| 3    | Male   | 19   | Student           | Low Vision              |
+| 1    | Male   | 35   | Teacher           | Blind              |
+| 2    | Female | 31   | Teacher           | Blind              |
+| 3    | Male   | 19   | Student           | Blind              |
 | 4    | Male   | 19   | Student           | Blind                   |
 | 5    | Male   | 20   | Student           | Blind                   |
-| 6    | Female | 19   | Student           | Low Vision              |
+| 6    | Female | 19   | Student           | Blind              |
 | 7    | Female | 21   | Student           | Blind                   |
-| 8    | Male   | 27   | Software Engineer | Low Vision              |
+| 8    | Male   | 27   | Software Engineer | Blind              |
 | 9    | Male   | 28   | Software Engineer | Blind                   |
-| 10   | Female | 24   | Software Engineer | Low Vision              |
+| 10   | Female | 24   | Software Engineer | Blind              |
 | 11   | Male   | 46   | Massage Therapist | Blind                   |
 | 12   | Female | 40   | Massage Therapist | Blind                   |
 
