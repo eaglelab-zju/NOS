@@ -60,10 +60,10 @@ bash .ci/install.sh
     └── rico-labeled
 ```
 
-- you should put the dataset into `NOSI/dataset`
+- you should put the dataset into `NOS/dataset`
 
 ```sh
-cd NOSI
+cd NOS
 mkdir dataset
 mv ${nos-raw-labeled-path} ./dataset/nos-raw-labeled
 mv ${rico-labeled-path}    ./dataset/rico-labeled
@@ -89,7 +89,7 @@ python preprocess.py
 # for dataset `nos-raw` and `rico`, you should repeat the above steps twice
 ```
 
-- finally, the `NOSI` workspace will be:
+- finally, the `NOS` workspace will be:
 
 ```sh
 .
