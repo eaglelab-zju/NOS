@@ -8,9 +8,11 @@ bash .ci/install-dev.sh
 bash .ci/install.sh
 ```
 
-## Dataset
+## Dataset: NOS [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14802776.svg)](https://doi.org/10.5281/zenodo.14802776)
 
 ### Download
+
+Check the DOI url or the following google driver urls:
 
 - extra-nos-raw-labeled
     - [download-url](https://drive.google.com/file/d/1PGznhGlPKjEXatq0Sh3cVUuqx5beOfHF/view?usp=sharing)
@@ -127,7 +129,9 @@ python preprocess.py
 └── IGNN
 ```
 
-## Predict
+## Method: GIFT [![CODE DOI](https://zenodo.org/badge/919884401.svg)](https://doi.org/10.5281/zenodo.14803014)
+
+### Predict
 
 - copy the checkpoint file
 
@@ -150,7 +154,7 @@ python -u main.py --mode predict --checkpoint split_1 --dataset rico    --split 
 
 - then you can see the result in `./predict_result/ignn`
 
-## Train
+### Train
 
 - run command
 
