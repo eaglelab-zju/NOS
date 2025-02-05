@@ -8,7 +8,7 @@ bash .ci/install-dev.sh
 bash .ci/install.sh
 ```
 
-## Dataset: NOS [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14802776.svg)](https://doi.org/10.5281/zenodo.14802776)
+## Dataset: NOS [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14802776.svg)](https://doi.org/10.5281/zenodo.14802776) & NOS-raw [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14808245.svg)](https://doi.org/10.5281/zenodo.14808244)
 
 ### Download
 
