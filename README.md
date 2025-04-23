@@ -1,3 +1,7 @@
+# Towards an Inclusive Mobile Web: A Dataset and Framework for Focusability in UI Accessibility (WWW'25 Web4Good) 
+
+📄 Read the full paper here [Link](https://dl.acm.org/doi/10.1145/3696410.3714523).
+
 ## Installation
 
 - python>=3.8
@@ -166,3 +170,16 @@ python -u main.py --dataset rico     --split 1 --mode train --gpu 0
 ```
 
 - the checkpoint will be saved in `./model_checkpoint/ignn`
+
+## Citation
+
+```bibtex
+@inproceedings{10.1145/3696410.3714523,
+title = {Towards an Inclusive Mobile Web: A Dataset and Framework for Focusability in UI Accessibility},
+author = {Gu, Ming and Pei, Lei and Zhou, Sheng and Shen, Ming and Wu, Yuxuan and Gao, Zirui and Wang, Ziwei and Shan, Shuo and Jiang, Wei and Li, Yong and Bu, Jiajun},
+booktitle = {Proceedings of the ACM on Web Conference 2025},
+pages = {5096–5107},
+numpages = {12},
+year = {2025}
+}
+```
